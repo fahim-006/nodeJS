@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object</title>
+</head>
+<body>
+	<script type="text/javascript">
+	let cat = {
+		name: "meow",
+		age : "4",
+
+		//object indide object
+		foods:{
+			favourite: "TUNA",
+			leastFav: "Orange",
+		},
+		
+		eyeColor: "blue",
+
+		meow(){
+			alert("meow")
+		},
+	}
+
+	function abc(){
+		alert(cat.eyeColor);
+	}
+
+	document.addEventListener("click", abc);
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Higher Order Function</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		function createMultiplier (multiplies){
+			return function(x){
+				return x*multiplies;
+			}
+		}
+
+		let doubleMe = createMultiplier(2)
+		document.write(doubleMe(5))
+	</script>
+
+</body>
+</html>

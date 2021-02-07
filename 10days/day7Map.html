@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Map</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		let pets = [{name: "mewo", species: "cat", age: "25"},
+					{name: "mewo1", species: "dog", age: "21"},
+					{name: "mewo2", species: "dog", age: "22"}
+					]
+		console.log(pets.push ({name: "mewo3", species: "dog", age: "23"})) //number of elements
+
+		let ourTest = pets.map(nameOnly)
+
+		function nameOnly(x){
+			return x.name
+		}
+
+		console.log(ourTest)
+
+	</script>
+
+</body>
+</html>

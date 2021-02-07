@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		let myFavNum = 7;
+		let myFavArray = [9,2,8,3,7,4];
+		let myWords = ["red", "orange", "yellow"];
+		let myPets = [{name: "Meow", speceis: "cat"}, { name: "ghew", speceis: "dog"}] //object array
+
+		//Adding an item to an existing array
+		myWords.push ("green")
+		console.log(myWords)
+
+		//make all of the letter uppercase
+		let myName = "Mashrur"
+		console.log(myName.toUpperCase())
+
+		//Make a float number to an integer
+		let num = 7.89
+		console.log (num.toFixed())
+
+		//Remove an item from an array
+		myWords.slice (1,1) //removing from index 1, 1 item
+		console.log(myWords)
+
+		//get an item from an array
+		console.log(myFavArray[2])
+
+		//read an item from objects
+		console.log(myPets[1].speceis);
+	</script>
+
+</body>
+</html>

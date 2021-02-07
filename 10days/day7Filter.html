@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filter</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		let pets = [{name: "mewo", species: "cat", age: "25"},
+					{name: "mewo1", species: "dog", age: "21"},
+					{name: "mewo2", species: "dog", age: "22"}
+					]
+		console.log(pets.push ({name: "mewo3", species: "dog", age: "23"})) //number of elements
+
+		let dogs = pets.filter(onlyDogs)
+
+		function onlyDogs(x){
+			return x.species="dog"
+		}
+
+		console.log(dogs)
+	</script>
+
+</body>
+</html>
